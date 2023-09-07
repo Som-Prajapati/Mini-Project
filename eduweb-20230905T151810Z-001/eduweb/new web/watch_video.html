@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo-title.png" type="logo-img">
+    <title>watch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="javasc1.js"></script> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+
+
+
+        <section class="flex">
+           
+                <!-- We havent added logo name instead we added logo class(so needed to change logo class to logo-img) -->
+                <img class="logo-img" src="images/logo.png" alt="">
+
+         
+            <form action="" method="post" class="search-form" id="ssearch-form">
+                <input type="text" name="search_box" placeholder="search courses...." required maxlength="100">
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+            <div id="pprofile" class="profile">
+                <img src="images/profile-bhaviksir-img.jpeg" alt="">
+                <h3>Bhavik Sir</h3>
+                <span>Student</span>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <!-- side-bar -->
+    <div class="side-bar" id="sside-bar">
+        <div class="close-side-bar" id="cclose">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile2">
+            <img src="images/profile-bhaviksir-img.jpeg" alt="">
+            <h5>Bhavik Sir</h5>
+            <h5 id="std">Student</h5>
+            <a href="profile.html" id="btn2" class="btn">view profile</a>
+            <nav class="icons2" class="navbar">
+                <div>
+                    <a href="home.html">
+                        <i class="fas fa-home"><span>home</span>
+                        </i>
+
+                    </a>
+
+                </div>
+                <div>
+                    <a href="about.html">
+                        <i class="fas fa-question"><span> about us</span>
+                        </i>
+
+                </div>
+                <div>
+
+                    </a><a href="courses.html">
+                        <i class="fas fa-graduation-cap"><span>courses</span>
+                        </i>
+
+                    </a>
+                </div>
+                <div>
+
+                    <a href="teachers.html">
+                        <i class="fas fa-chalkboard-user"><span>teachers</span>
+                        </i>
+
+                </div>
+
+
+                </a>
+                <div>
+                    <a href="contact.html">
+                        <i class="fas fa-phone"><span>contact us</span>
+                        </i>
+
+                    </a>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <!--slide bar ends-->
+    <!--watch video section starts-->
+    <section class="watch-video">
+        <div class="video-details">
+            <video src="images/html-video-1.mp4" class="video" poster="images/post-1-1.png" 
+            controls autoplay></video>
+            <h3 class="title">complete HTML tutorial (part 01)</h3>
+            <div class="info">
+                <p><i class="fas fa-calendar"></i><span>21-7-2022</span></p>
+               
+            </div>
+            <div class="tutor">
+                <img src="images/profile-smallbeard-img.jpeg" alt="">
+                <div>
+                    <h3>Aditya</h3>
+                   <span>PROFESSOR</span>
+                </div>
+            </div>
+            <form action="" method="post" class="flex">
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+                <button type="submit"><i class="far fa-heart"></i><span>like</span></button>
+            </form>
+            <div class="discription">
+                <p>HTML is the most widely used language for developing web applications.
+                     It was created by Berners-Lee in the year 1991 but was first published in 1995. 
+                     HTML 4 was a popular breakthrough version and got published in 1999. 
+                     This version gained a lot of popularity and was adopted all over the globe for developing web applications.
+                      HTML 5 is the current version and was published in 2012. HTML is critical for web development,
+                     and if you've ever thought about choosing that career path,
+                      you'd unquestionably have come across this language. </p>
+            </div>
+        </div>
+
+    </section>
+    <!--watch video section ends-->
+
+    <!--comments section starts-->
+    <section class="comments">
+        <h1 class="heading">add comment</h1>
+        <form action="" method="post" class="add-comment">
+           
+            <textarea name="comment_box" required placeholder="write your comment.."  cols="30" rows="10"></textarea>
+            <input type="submit" value="add comment" name="add_comment" class="inline-btn">
+
+
+        </form>
+        <div class="show-comments">
+            <div class="box">
+                <div class="user">
+                    <img src="images/profile-sir-img.jpeg" alt="">
+                    <div>
+                        <h3>Som </h3>
+                        <span>21-8-23</span>
+                    </div>
+                </div>
+                <p class="text">Very Well Explained</p>
+                <form action="" method="post" class="flex-btn">
+                
+                    <button type="submit" name="edit_comment" class="inline-btn">edit comment</button>
+                    <button type="submit" name="delete_comment" class="inline-delete-btn">delete comment</button>
+                </form>
+
+                </div>
+                <div class="box">
+                    <div class="user">
+                        <img src="images/profile-smallbeard-img.jpeg" alt="">
+                   <div>
+
+                    <h3>Som</h3>
+                    <span>22-8-2023</span>
+                   </div> 
+                </div>
+                <p class="text">wow amazing video ! </p>
+           </div>
+
+
+            </div>
+
+        
+
+
+
+
+    </section>
+    <!--comments section ends-->
+
+
+
+<!-- footer -->
+    <footer class="footer">
+        &copy; copyright @ 2023 by <span>Gurukul </span> | All rights reserved!
+    </footer>
+
+    <script src="javasc.js"></script>
+</body>
+
+
+</html>
